@@ -1,0 +1,11 @@
+Host gitlab.devtools.intel.com
+    Hostname gitlab.devtools.intel.com
+    IdentityFile ~/.ssh/id_rsa.gitlab.intel
+    IdentitiesOnly yes
+
+Host gerrit-gfx.intel.com
+    Hostname gerrit-gfx.intel.com
+    IdentityFile ~/.ssh/id_rsa_gerrit
+    User carlschm
+    IdentitiesOnly yes
+

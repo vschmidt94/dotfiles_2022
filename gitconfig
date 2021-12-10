@@ -1,0 +1,30 @@
+# [http "https://github.com"]
+# 	proxy = http://proxy-iboss.intel.com:912
+# [http "https://lfs.github.com"]
+# 	proxy = http://proxy-iboss.intel.com:912
+# [http "https://github-cloud.s3.amazonaws.com"]
+# 	proxy = http://proxy-iboss.intel.com:912
+# [http "https://github-cloud.githubusercontent.com"]
+# 	proxy = http://proxy-iboss.intel.com:912
+[user]
+	email = vaughan.schmidt@intel.com
+	name = Vaughan Schmidt
+[credential "https://github.com"]
+	helper = 
+[core]
+    pager = less
+    excludesfile = ~/.personal_gitignore
+[diff]
+    tool = meld
+[difftool]
+    prompt = false
+[difftool "meld"]
+    trustExitCode = true
+    cmd = open -W -a Meld --args \"$LOCAL\" \"$PWD/$REMOTE\"
+[merge]
+    tool = meld
+[mergetool]
+    prompt = false
+[mergetool "meld"]
+    trustExitCode = true
+    cmd = open -W -a Meld --args --auto-merge \"$PWD/$LOCAL\" \"$PWD/$MERGED\" \"$PWD/$REMOTE\" --output=\"$PWD/$MERGED\"
