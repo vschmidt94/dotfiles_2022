@@ -2,4 +2,5 @@
 -- vschmidt94
 
 require('settings')
+require('plugins')
 
