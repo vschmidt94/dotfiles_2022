@@ -7,5 +7,15 @@
         path: ssh/config
         create: true
     ~/.tmux.conf: tmux.conf
+    ~/.config/nvim: 
+        path: config/nvim
+        create: true
+    ~/.vim: 
+        path: vim
+        create: true
+    ~/.config/kitty: 
+        path: config/kitty
+        create: true
+
 
 

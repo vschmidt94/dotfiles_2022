@@ -1,0 +1,27 @@
+"---------------------------------------------------------------------
+" Gvim Configuration File
+" V. Schmidt
+"
+" GUI (gvim) only additions to vimrc
+"
+" Sections:
+"---------------------------------------------------------------------
+
+set guioptions-=T
+set guioptions-=e
+set guitablabel=%M\ %t
+
+" GUI Fonts
+if has("win32")
+    set guifont=Iosevka_Term:h11:cANSI
+elseif has("gui_macvim")
+    set guifont=IosevkaNerdFontCompleteM-:h18
+else
+    if has("unix")
+        set guifont=Iosevka\ Term\ 14
+    endif
+endif
+
+" No annoying sound on errors
+autocmd GUIEnter * set vb t_vb=
+
