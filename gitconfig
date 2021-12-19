@@ -1,11 +1,3 @@
-[http "https://github.com"]
-	proxy = http://proxy-iboss.intel.com:912
-[http "https://lfs.github.com"]
-	proxy = http://proxy-iboss.intel.com:912
-[http "https://github-cloud.s3.amazonaws.com"]
-	proxy = http://proxy-iboss.intel.com:912
-[http "https://github-cloud.githubusercontent.com"]
-	proxy = http://proxy-iboss.intel.com:912
 [user]
 	email = vaughan.schmidt@intel.com
 	name = Vaughan Schmidt
